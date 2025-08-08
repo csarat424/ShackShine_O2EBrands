@@ -12,9 +12,9 @@ resource "aws_instance" "Shackshine-EC2-Instance" {
               sudo apt install git -y
               sudo git clone https://github.com/csarat424/ShackShine_O2EBrands.git
               sudo rm -rf /var/www/html/index.nginx-debian.html
-              sudo cp ShackShine_O2EBrands/index.html /var/www/html/index.nginx-debian.html
-              sudo cp ShackShine_O2EBrands/styles.css /var/www/html/style.css
-              sudo cp ShackShine_O2EBrands/script.js /var/www/html/script.js
+              sudo cp index.html /var/www/html/index.nginx-debian.html
+              sudo cp styles.css /var/www/html/style.css
+              sudo cp script.js /var/www/html/script.js
               sudo systemctl restart nginx
               EOF
 
